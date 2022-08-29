@@ -1,0 +1,117 @@
+$corDiv1: antiquewhite;
+$card-header1: rgb(210, 177, 107);
+$corDiv2: blanchedalmond;
+$card-header2: rgb(171, 142, 98);
+$corDiv3: beige;
+$card-header3: rgb(191, 191, 148);
+
+$teste: "true";
+
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin cardAvatar($url: "../img/semimagem.jpg") {
+    margin-top: 100px;
+    padding: 5px;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-image: url($url);
+    background-size: cover;
+}
+
+@function semfuncao() {
+    @if $teste =="true" {
+        @return 10px;
+    }
+
+    @else {
+        @return 50px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include flex-center();
+    height: 100vh;
+    /* viewheight */
+    width: 100vw;
+    /* viewwidth */
+}
+
+.div1 {
+    height: 400px;
+    width: 300px;
+    background-color: $corDiv1;
+    border-radius: semfuncao();
+    margin: 5px;
+
+    .card-header1 {
+        @include flex-center();
+        height: 100px;
+        width: 300px;
+        background-color: $card-header1;
+        border-top-left-radius: semfuncao();
+        border-top-right-radius: semfuncao();
+
+        .card-avatar1 {
+            @include cardAvatar("../img/female.jpg");
+
+            &:hover {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.div2 {
+    height: 400px;
+    width: 300px;
+    background-color: $corDiv2;
+    border-radius: semfuncao();
+    margin: 5px;
+
+    .card-header2 {
+        @include flex-center();
+        height: 100px;
+        width: 300px;
+        background-color: $card-header2;
+        border-top-left-radius: semfuncao();
+        border-top-right-radius: semfuncao();
+
+        .card-avatar2 {
+            @include cardAvatar("../img/semimagem.jpg");
+        }
+    }
+}
+
+.div3 {
+    height: 400px;
+    width: 300px;
+    background-color: $corDiv3;
+    border-radius: semfuncao();
+    margin: 5px;
+
+    .card-header3 {
+        @include flex-center();
+        height: 100px;
+        width: 300px;
+        background-color: $card-header3;
+        border-top-left-radius: semfuncao();
+        border-top-right-radius: semfuncao();
+
+        .card-avatar3 {
+            @include cardAvatar("../img/male.jpg");
+        }
+    }
+}

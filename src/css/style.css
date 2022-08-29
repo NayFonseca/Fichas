@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* viewheight */
+  width: 100vw;
+  /* viewwidth */
+}
+
+.div1 {
+  height: 400px;
+  width: 300px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin: 5px;
+}
+.div1 .card-header1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  background-color: rgb(210, 177, 107);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.div1 .card-header1 .card-avatar1 {
+  margin-top: 100px;
+  padding: 5px;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  background-image: url("../img/female.jpg");
+  background-size: cover;
+}
+.div1 .card-header1 .card-avatar1:hover {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.div2 {
+  height: 400px;
+  width: 300px;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  margin: 5px;
+}
+.div2 .card-header2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  background-color: rgb(171, 142, 98);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.div2 .card-header2 .card-avatar2 {
+  margin-top: 100px;
+  padding: 5px;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  background-image: url("../img/semimagem.jpg");
+  background-size: cover;
+}
+
+.div3 {
+  height: 400px;
+  width: 300px;
+  background-color: beige;
+  border-radius: 10px;
+  margin: 5px;
+}
+.div3 .card-header3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  background-color: rgb(191, 191, 148);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.div3 .card-header3 .card-avatar3 {
+  margin-top: 100px;
+  padding: 5px;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  background-image: url("../img/male.jpg");
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */
